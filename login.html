@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('login.jpg') no-repeat center center fixed; /* Changed background image */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .navbar {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+        }
+        .navbar a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .navbar a:first-child {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar a:hover:not(:first-child) {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+        }
+        .wrapper {
+            background: #00000087;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+            opacity: 0.9;
+        }
+        label {
+            color: white;
+            display: block; /* Ensures label takes full width */
+            text-align: center; /* Center align the text */
+            margin-bottom: 5px; /* Space between label and input */
+        }
+        .input-box {
+            margin-bottom: 15px;
+        }
+        .pass {
+            position: relative;
+            margin-bottom: 15px; /* Reduced margin for better fit */
+        }
+        .check-box {
+            display: flex;
+            flex-direction: column; /* Ensure items stack vertically */
+            align-items: center; /* Center items horizontally */
+            margin-top: 10px;
+        }
+        .btn {
+            text-align: center;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px; /* Add some space above the button */
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        form {
+            width: 100%; /* Ensure form takes full width of wrapper */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a>TravelCompanion</a>
+        <a href="ind.php">Home</a>
+        <a href="admin.html">Admin Login</a>
+    </div>
+    <div class="wrapper">
+        <form action="login.php" method="POST">
+            <h1 style="color:white; text-align: center;">User Login</h1>
+            <div class="input-box">
+                <label for="email">Username:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="pass">
+                <label for="password_user">Password:</label>
+                <input type="password" id="password_user" name="passwd" placeholder="Password" required>
+            </div>
+            <div id="text_show" style="color:red;"></div>
+            <div class="check-box">
+                <label><input type="checkbox"> Remember me</label>
+                <button type="submit" class="btn">Login</button> <!-- Centered button -->
+            </div>
+        </form>
+    </div>
+</body>
+</html>

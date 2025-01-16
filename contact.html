@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Company</title>
+    <style>
+        body {
+            background-image: url('login.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1; /* Ensure the navbar is on top */
+        }
+
+        .navbar a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .navbar a:first-child {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover:not(:first-child) {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+        }
+
+        .contact-methods {
+            margin-top: 100px; /* Adjust margin to prevent overlap with navbar */
+            padding: 20px;
+            background-color: #18141467;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            color: rgb(235, 232, 232);
+        }
+
+        .contact-method h2 {
+            margin-top: 0;
+        }
+
+        .contact-method a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .contact-method a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a>TravelCompanion</a>
+        <a href="ind.php">Home</a>
+        <a href="admin.html">Admin Login</a>
+    </div>
+    <div class="contact-methods">
+        <h1>Contact Us</h1>
+        <div class="contact-method">
+            <h2>Phone</h2>
+            <p>For immediate assistance, please call us at:</p>
+            <p><strong>+1 (555) 123-4567</strong></p>
+        </div>
+
+        <div class="contact-method">
+            <h2>Email</h2>
+            <p>Feel free to reach out via email at:</p>
+            <p><strong><a href="mailto:info@travelcompany.com">info@travelcompany.com</a></strong></p>
+        </div>
+
+        <div class="contact-method">
+            <h2>Social Media</h2>
+            <p>Connect with us on social media:</p>
+            <p>
+                <strong><a href="#">Facebook</a></strong><br>
+                <strong><a href="#">Twitter</a></strong><br>
+                <strong><a href="#">Instagram</a></strong>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+    background-image: url('sa.jpg'); /* Corrected the URL */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+    .navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+}
+.navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.navbar a:first-child {
+    font-size: 24px;
+    font-weight: bold;
+}
+.navbar a:hover:not(:first-child) {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+    </style>
+</head>
+<body >
+    <div class="navbar">
+        <a>TravelCompanion</a>
+        <a href="ind.php">Home</a>
+        <a href="admin.html">Admin Login</a>
+    </div>
+    <div class="wrapper">
+        <h1 style=color:white;>ACCOUNT REGISTRATION</h1>
+        <form action="register.php" method="POST">
+            <input type="text" name="f_name" id="f_name" class="input" placeholder="Enter your First Name" required>
+            <input type="text" name="l_name" id="l_name" class="input" placeholder="Enter your Last Name" required>
+            <input type="email" name="email" id="email" class="input" placeholder="Enter your Email" required>
+            <input type="tel" name="phone" id="phone" class="input" placeholder="Enter your Phone" required>
+            <input type="password" placeholder="Password" class="input" required name="password" id="password">
+            <button class="btn" type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
